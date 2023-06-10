@@ -15,23 +15,23 @@ module.exports = function(environment) {
   
       APP: {
         // API host and port
-        ApiUrl: '//192.168.178.27/',
+        ApiUrl: '//localhost:8080',
   
         // HTTP mining endpoint
         HttpHost: 'http://192.168.178.27',
         HttpPort: 8888,
   
         // Stratum mining endpoint
-        StratumHost: 'example.net',
+        StratumHost: 'pool.blockyfile.org',
         StratumPort: 8008,
   
         // The ETC network
-        Unit: 'ETC',
+        Unit: 'BFY',
 
         // Fee and payout details
         PoolFee: '1%',
-        PayoutThreshold: '0.5 ETC',
-        BlockReward: 2.56,
+        PayoutThreshold: '0.5 BFY',
+        BlockReward: 2,
   
         // For network hashrate (change for your favourite fork)
         BlockTime: 13.2
@@ -68,3 +68,4 @@ module.exports = function(environment) {
     return ENV;
   };
   
+

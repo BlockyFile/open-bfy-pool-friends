@@ -1,7 +1,7 @@
 <div class="table-responsive">
   <table class="table table-condensed table-striped">
     <thead>
-      <tr>
+      <tr style="color: #1a191e;">
         <th>Blocks</th>
         <th>Shares/Diff</th>
         <th>Uncle Rate</th>
@@ -10,7 +10,7 @@
     </thead>
     <tbody>
     {{#each-in model.luck as |total row|}}
-    <tr>
+    <tr style="color: #1a191e;">
       <td>{{total}}</td>
       <td>{{format-number row.luck style='percent'}}</td>
       <td>{{format-number row.uncleRate style='percent'}}</td>

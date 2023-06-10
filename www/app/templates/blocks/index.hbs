@@ -1,9 +1,9 @@
 {{#if model.matured}}
-<h4>Matured Blocks</h4>
+<h4 style="color: #1a191e;">Matured Blocks</h4>
 <div class="table-responsive">
 <table class="table table-condensed table-striped">
   <thead>
-    <tr>
+    <tr style="color: #1a191e;">
       <th>Height</th>
       <th>Login</th>
       <th>Time Found</th>
@@ -14,7 +14,7 @@
       <th>Worker ID</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody style="color: #1a191e;">
     {{#each model.matured as |block|}}
       {{partial "blocks/block"}}
     {{/each}}

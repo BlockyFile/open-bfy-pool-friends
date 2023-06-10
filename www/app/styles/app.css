@@ -8,6 +8,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   background: url('/bg.png');
+  color: #d0d4da;
 }
 .footer {
   position: absolute;
@@ -15,7 +16,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #1a191e;
 }
 .center {
   align-items: center;
@@ -53,7 +54,7 @@ body > .container {
   margin: 0;
 	padding: 40px 0 15px 0;
 	margin-bottom: 15px;
-  background-color: #e9ffee;
+  background-color: #1a191e;
 }
 
 code {
@@ -65,38 +66,38 @@ code {
 }
 
 .navbar-default {
-	background-color: #ffffff;
-	border-color: #61BD81;
+	background-color: #1a191e;
+	border-color: #4528f6;
   border-bottom-width: 2px;
 }
 .navbar-default .navbar-brand {
-	color: #4A4A4A;
+	color: #1a191e;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #4A4A4A;
+	color: #d0d4da;
 }
 .navbar-default .navbar-text {
-	color: #4A4A4A;
+	color: #d0d4da;
 }
 .navbar-default .navbar-nav > li > a {
-	color: #4A4A4A;
+	color: #d0d4da;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #61BD81;
+	color: #4528f6;;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #ffffff;
-	background-color: #61BD81;
+	color: #1a191e;
+	background-color: #4528f6;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	color: #ffffff;
-	background-color: #69102b;
+	color: #1a191e;
+	background-color: #4528f6;
 }
 .navbar-default .navbar-toggle {
-	border-color: #2885da;
+	border-color: #1a191e;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #2885da;
+	background-color: #1a191e;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #4A4A4A;
@@ -114,7 +115,7 @@ code {
 
 @media (max-width: 767px) {
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #4A4A4A;
+		color: #1a191e;
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
 		color: #ffffff;
@@ -134,7 +135,7 @@ span.logo-1 {
 
 span.logo-2 {
 	font-weight: 700;
-	color: #4A4A4A;
+	color: #d0d4da;
   padding: 0 23px 0 5px;
 }
 
@@ -361,7 +362,7 @@ h4.note {
 }
 
 .btn-etc:hover {
-    color: #fff;
+    color: #d0d4da;
     background-color: #428359;
     border-color: #2c623e;
 }

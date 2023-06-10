@@ -1,11 +1,11 @@
 <div class="container">
  {{high-charts mode=chartMode chartOptions=chartPayment content=chartData}}
   {{#if model.payments}}
-  <h4>Your Latest Payouts</h4>
+  <h4 style="color: #1a191e;">Your Latest Payouts</h4>
   <div class="table-responsive">
     <table class="table table-condensed table-striped">
       <thead>
-        <tr>
+        <tr style="color: #1a191e;"> 
           <th>Time</th>
           <th>Tx ID</th>
           <th>Amount</th>
@@ -13,10 +13,10 @@
       </thead>
       <tbody>
         {{#each model.payments as |tx|}}
-          <tr>
+          <tr style="color: #1a191e;">
             <td>{{format-date-locale tx.timestamp}}</td>
             <td>
-              <a href="https://expedition.dev/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
+              <a href="https://explorer.blockyfile.org/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
             </td>
             <td>{{format-balance tx.amount}}</td>
           </tr>

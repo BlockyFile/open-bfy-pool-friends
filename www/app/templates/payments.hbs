@@ -6,11 +6,11 @@
 </div>
 <div class="container">
   {{#if model.payments}}
-  <h4>Latest Payouts</h4>
+  <h4 style="color: #1a191e;">Latest Payouts</h4>
   <div class="table-responsive">
     <table class="table table-condensed table-striped">
       <thead>
-        <tr>
+        <tr style="color: #1a191e;">
           <th>Time</th>
           <th>Amount</th>
           <th>Address</th>
@@ -19,14 +19,14 @@
       </thead>
       <tbody>
         {{#each model.payments as |tx|}}
-          <tr>
+          <tr style="color: #1a191e;">
             <td>{{format-date-locale tx.timestamp}}</td>
             <td>{{format-number tx.formatAmount}}</td>
             <td>
-              <a href="https://expedition.dev/address/{{tx.address}}" class="hash" rel="nofollow" target="_blank">{{tx.address}}</a>
+              <a href="https://explorer.blockyfile.org/address/{{tx.address}}" class="hash" rel="nofollow" target="_blank">{{tx.address}}</a>
             </td>
             <td>
-              <a href="https://expedition.dev/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{format-tx tx.tx}}</a>
+              <a href="https://explorer.blockyfile.org/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{format-tx tx.tx}}</a>
             </td>
           </tr>
         {{/each}}

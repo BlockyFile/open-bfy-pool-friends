@@ -3,7 +3,7 @@
   <h4>Your Latest Rewards</h4>
   <table class="table table-condensed table-striped">
   {{#each model.sumrewards as |sumreward|}}
-  <tr>
+  <tr style="color: #1a191e;">
     <td>{{sumreward.name}}</td>
     <td>{{format-balance sumreward.reward}}</td>
   </tr>
@@ -12,7 +12,7 @@
    <span class="label label-default">Immature</span> <span class="label label-success">Matured</span>
   <table class="table table-condensed table-striped">
     <thead>
-      <tr>
+      <tr style="color: #1a191e;">
         <th>Block Height</th>
         <th>Time Found</th>
         <th>Reward</th>
@@ -21,7 +21,7 @@
     </thead>
     <tbody>
       {{#each model.rewards as |tx|}}
-        <tr>
+        <tr style="color: #1a191e;">
           <td>{{format-number  tx.blockheight}}</td>
           <td>{{format-date-locale tx.timestamp}}</td>
           <td>

@@ -4,3 +4,6 @@ testnet.json
 
 /build/_workspace/
 /build/bin/
+/www/bower_components/
+/www/dist/
+/www/node_modules/
