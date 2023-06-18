@@ -44,8 +44,8 @@ var homesteadReward = math.MustParseBig256("5000000000000000000")
 var disinflationRateQuotient = big.NewInt(4) // Disinflation rate quotient for ECIP1017
 var disinflationRateDivisor = big.NewInt(5)  // Disinflation rate divisor for ECIP1017
 // params for ethash
-var frontierBlockReward = big.NewInt(5e+18)
-var byzantiumBlockReward = big.NewInt(3e+18)
+var frontierBlockReward = big.NewInt(2e+18)
+var byzantiumBlockReward = big.NewInt(2e+18)
 var constantinopleBlockReward = big.NewInt(2e+18)
 
 // params for ubqhash
@@ -313,8 +313,7 @@ func (u *BlockUnlocker) handleBlock(block *rpc.GetBlockReply, candidate *storage
 	} else if u.config.Network == "ethereum" || u.config.Network == "ropsten" || u.config.Network == "ethereumPow" || u.config.Network == "ethereumFair" {
 		reward = getConstRewardEthereum(candidate.Height, u.config)
 		// Add reward for including uncles
-		uncleReward := new(big.Int).Div(reward, big32)
-		rewardForUncles := big.NewInt(0).Mul(uncleReward, big.NewInt(int64(len(block.Uncles))))
+		rewardForUncles := big.NewInt(0)
 		reward.Add(reward, rewardForUncles)
 	} else {
 		log.Fatalln("Invalid network set", u.config.Network)
@@ -803,7 +802,7 @@ func getUncleRewardEthereum(uHeight *big.Int, height *big.Int, reward *big.Int) 
 		r = big.NewInt(0)
 	}
 
-	return r
+	return big.NewInt(0)
 }
 
 // ethash, etchash, ubqhash
